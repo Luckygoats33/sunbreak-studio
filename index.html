@@ -866,8 +866,6 @@ ul, ol { list-style: none; }
   .footer-brand p { max-width: 100%; }
   .footer-bottom { flex-direction: column; text-align: center; gap: 8px; padding-bottom: 70px; }
 
-  /* Film burn transitions smaller */
-  .film-burn { height: 36px; }
 
   /* Buttons global mobile */
   .btn-vintage, .btn-ghost { font-size: .82rem; padding: 13px 24px; }
@@ -1077,6 +1075,9 @@ ul, ol { list-style: none; }
 @keyframes burnFlicker {
   0% { opacity: 0.7; }
   100% { opacity: 1; }
+}
+@media (max-width: 768px) {
+  .film-burn { height: 36px; }
 }
 
 /* ===== DARKROOM REVEAL ===== */
